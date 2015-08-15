@@ -5,4 +5,4 @@ This repo was created so I could suss out the qualities of using the [Slim Frame
 ## Usage
 - First install [Composer](https://getcomposer.org/)
 
-- lone this repo and run <code>composer install</code>
+- Clone this repo and run <code>composer install</code>
