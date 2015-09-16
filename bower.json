@@ -1,0 +1,18 @@
+{
+  "name": "slimplates",
+  "version": "1.0.0",
+  "homepage": "https://github.com/djaxho/slimplates",
+  "authors": [
+    "Danny Jackson <djaxho@gmail.com>",
+    "Marco Salazar de Leon <marcos@markorubel.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
