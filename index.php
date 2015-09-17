@@ -1,29 +1,12 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require_once(__DIR__ . '/vendor/autoload.php');
 
-use Slim\Slim;
-use \Media32\Slim\View\Plates;
+// Load all of the initializers
+require_once(__DIR__ . '/app/bootstrap.php');
 
-$view = new Plates();
+// Load the routes
+require_once(__DIR__ . '/app/routes.php');
 
-//access Slim's URL functions inside templates by hooking up the view extension:
-$view->parserExtensions = array(
-    new \Media32\Slim\View\PlatesExtension()
-);
-//set the template path
-$view->templatesPath = 'views';
-
-$app = new Slim(array(
-	'view' => $view
-));
-
-$app->get("/", function() use ($app){
-	$app->render('index', ['name' => 'Danny']);
-})->name('home');
-
-$app->post("/", function(){echo "Submitted something";});
-
+// Run the Application
 $app->run();
-
-?>
